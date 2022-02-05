@@ -22,9 +22,6 @@ android {
         debug {
             debuggable true
         }
-        staging {
-            initWith debug
-        }
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
