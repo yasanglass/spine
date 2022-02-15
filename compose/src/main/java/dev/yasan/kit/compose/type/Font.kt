@@ -4,7 +4,7 @@ import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
-import dev.yasan.kit.core.R
+import dev.yasan.kit.compose.R
 
 val rubikFamily = FontFamily(
     Font(R.font.rubik_black, FontWeight.Black, FontStyle.Normal),

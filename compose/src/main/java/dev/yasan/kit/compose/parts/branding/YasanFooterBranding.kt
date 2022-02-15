@@ -9,8 +9,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.Dp
 import coil.compose.rememberImagePainter
+import dev.yasan.kit.compose.R
 import dev.yasan.kit.compose.foundation.grid
-import dev.yasan.kit.core.R
 
 /**
  * YASAN branding footer composable. Shows YASAN logo in form of a footer.
