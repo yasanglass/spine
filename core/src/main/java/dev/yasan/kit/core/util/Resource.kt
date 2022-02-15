@@ -1,4 +1,4 @@
-package dev.yasan.kit.library.util
+package dev.yasan.kit.core.util
 
 import androidx.annotation.StringRes
 

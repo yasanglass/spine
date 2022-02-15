@@ -1,4 +1,4 @@
-package dev.yasan.kit.library.ui.preview
+package dev.yasan.kit.core.ui.preview
 
 import androidx.compose.ui.tooling.preview.PreviewParameterProvider
 

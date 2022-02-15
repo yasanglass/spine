@@ -13,4 +13,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "YDK for Android"
-include ':library'
+include ':core'
