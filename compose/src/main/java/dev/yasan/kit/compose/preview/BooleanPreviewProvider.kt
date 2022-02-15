@@ -1,9 +1,9 @@
-package dev.yasan.kit.core.ui.preview
+package dev.yasan.kit.compose.preview
 
 import androidx.compose.ui.tooling.preview.PreviewParameterProvider
 
 /**
- * Provides preview parameters for [Boolean].
+ * Provides preview parameters for nullable [Boolean].
  */
 class BooleanPreviewProvider : PreviewParameterProvider<Boolean> {
 

@@ -1,4 +1,4 @@
-package dev.yasan.kit.core.ui.theme
+package dev.yasan.kit.compose.type
 
 import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily

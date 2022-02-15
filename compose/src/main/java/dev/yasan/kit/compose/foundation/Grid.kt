@@ -1,4 +1,4 @@
-package dev.yasan.kit.core.ui.theme
+package dev.yasan.kit.compose.foundation
 
 import androidx.compose.runtime.Stable
 import androidx.compose.ui.unit.dp

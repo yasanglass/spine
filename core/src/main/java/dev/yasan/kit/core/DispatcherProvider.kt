@@ -1,4 +1,4 @@
-package dev.yasan.kit.core.util
+package dev.yasan.kit.core
 
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Dispatchers

@@ -1,11 +1,11 @@
-package dev.yasan.kit.core.helper
+package dev.yasan.kit.core
 
 import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import androidx.browser.customtabs.CustomTabsIntent
-import dev.yasan.kit.core.helper.WebHelper.PLAY_STORE_APP_LINK_PREFIX
-import dev.yasan.kit.core.helper.WebHelper.openWebView
+import dev.yasan.kit.core.WebHelper.PLAY_STORE_APP_LINK_PREFIX
+import dev.yasan.kit.core.WebHelper.openWebView
 import java.util.regex.Pattern
 
 /**

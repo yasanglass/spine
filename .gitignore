@@ -9,16 +9,19 @@
 .cxx
 local.properties
 
-library/src/close/
 
-library/*/release/
 .project
 
 .settings/org.eclipse.buildship.core.prefs
 
-library/.settings/org.eclipse.buildship.core.prefs
-
-library/.classpath
+core/.settings/org.eclipse.buildship.core.prefs
+core/.classpath
+core/src/close/
+core/*/release/
+compose/.settings/org.eclipse.buildship.core.prefs
+compose/.classpath
+compose/src/close/
+compose/*/release/
 
 reports/*
 .vscode/settings.json
