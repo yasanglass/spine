@@ -1,4 +1,4 @@
-package dev.yasan.kit.compose.preview
+package dev.yasan.kit.compose.preview.bool
 
 import androidx.compose.ui.tooling.preview.PreviewParameterProvider
 
