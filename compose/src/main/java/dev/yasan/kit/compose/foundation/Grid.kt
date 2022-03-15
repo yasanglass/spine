@@ -1,6 +1,5 @@
 package dev.yasan.kit.compose.foundation
 
-import androidx.annotation.FloatRange
 import androidx.annotation.IntRange
 import androidx.compose.runtime.Stable
 import androidx.compose.ui.unit.dp
