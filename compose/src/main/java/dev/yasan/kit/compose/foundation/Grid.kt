@@ -1,5 +1,7 @@
 package dev.yasan.kit.compose.foundation
 
+import androidx.annotation.FloatRange
+import androidx.annotation.IntRange
 import androidx.compose.runtime.Stable
 import androidx.compose.ui.unit.dp
 
@@ -9,7 +11,7 @@ private val grid = 8.dp
 fun grid(multiplier: Float) = grid * multiplier
 
 @Stable
-fun grid(multiplier: Int) = grid * multiplier
+fun grid(@IntRange(from = 2) multiplier: Int) = grid * multiplier
 
 @Stable
 fun grid() = grid
