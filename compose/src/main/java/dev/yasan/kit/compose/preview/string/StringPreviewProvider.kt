@@ -3,7 +3,7 @@ package dev.yasan.kit.compose.preview.string
 import androidx.compose.ui.tooling.preview.PreviewParameterProvider
 
 /**
- * Provides preview parameters for nullable [Boolean].
+ * Provides preview parameters for [String].
  */
 class StringPreviewProvider : PreviewParameterProvider<String> {
 
