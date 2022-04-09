@@ -3,15 +3,15 @@ package dev.yasan.kit.compose.preview.string
 import androidx.compose.ui.tooling.preview.PreviewParameterProvider
 
 /**
- * Provides preview parameters for [String]. Only provides [String]s with 3 words max.
+ * Provides preview parameters for nullable [String]. Only provides [String]s with 3 words max.
  */
-class StringPreviewProvider3WordsMax : PreviewParameterProvider<String> {
+class StringPreviewProvider3WordsMaxNullable : PreviewParameterProvider<String?> {
 
     override val values = sequenceOf(
+        null,
         "The therapist yearns.",
         "Nunquam experientia olla.",
         "Devatios credere!"
     )
 
 }
-
