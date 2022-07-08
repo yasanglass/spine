@@ -17,7 +17,7 @@ sealed class Resource<T>(val data: T? = null, @StringRes val messageResourceId: 
     /**
      * Indicates data load failure. You should provide a [messageResourceId] for the user to see.
      */
-    class Error<T>(messageResourceId: Int) : Resource<T>(null, messageResourceId)
+    class Error<T>(messageResourceId: Int?) : Resource<T>(null, messageResourceId)
 
     /**
      * Indicates that the data is being loaded.
