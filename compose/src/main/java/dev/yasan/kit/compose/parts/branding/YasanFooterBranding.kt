@@ -41,7 +41,7 @@ fun YasanBrandingFooter(
         AsyncImage(
             model = ImageRequest.Builder(LocalContext.current)
                 .data(R.drawable.ic_yasan_logo_text2_color)
-                .crossfade(true)
+                .crossfade(crossFade)
                 .build(),
             contentDescription = null,
             modifier = Modifier.requiredHeight(logoHeight)
