@@ -11,6 +11,7 @@ object KeyboardHelper {
      *
      * @return If keyboard was closed.
      */
+    @Deprecated(message = "Please migrate to [androidx.compose.ui.platform.LocalFocusManager] & [androidx.compose.ui.platform.LocalSoftwareKeyboardController].")
     fun closeKeyboard(activity: Activity): Boolean {
         return try {
             val inputManager = activity.getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
