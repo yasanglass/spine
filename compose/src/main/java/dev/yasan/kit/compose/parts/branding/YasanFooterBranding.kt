@@ -25,6 +25,7 @@ fun YasanBrandingFooter(
     spacerBottom: Dp = grid(8),
     logoHeight: Dp = grid(6),
     crossFade: Boolean = true,
+    invertedColors: Boolean = false,
 ) {
 
     Column(
@@ -36,7 +37,10 @@ fun YasanBrandingFooter(
         }
         AsyncImage(
             model = ImageRequest.Builder(LocalContext.current)
-                .data(R.drawable.ic_yasan_logo_text2_color)
+                .data(
+                    if (invertedColors) R.drawable.ic_yasan_logo_text2_color_inverted
+                    else R.drawable.ic_yasan_logo_text2_color
+                )
                 .crossfade(crossFade)
                 .build(),
             contentDescription = null,
