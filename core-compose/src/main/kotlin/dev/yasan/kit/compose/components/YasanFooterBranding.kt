@@ -1,4 +1,4 @@
-package dev.yasan.kit.compose.parts.branding
+package dev.yasan.kit.compose.components
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -30,7 +30,7 @@ fun YasanBrandingFooter(
 
     Column(
         modifier = modifier.fillMaxWidth(),
-        horizontalAlignment = Alignment.CenterHorizontally
+        horizontalAlignment = Alignment.CenterHorizontally,
     ) {
         if (spacerTop > 0.dp) {
             Spacer(Modifier.requiredHeight(spacerTop))
