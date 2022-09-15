@@ -15,8 +15,16 @@ jobs:
 
   build:
     name: Build
-    uses: ./.github/workflows/build.yml
-    secrets: inherit
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Build
+        uses: gradle/gradle-build-action@v2
+        with:
+          gradle-version: current
+          arguments: build
 
   auto-merge-dependabot-pr:
     name: Auto-merge Dependabot PR
