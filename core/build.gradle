@@ -3,33 +3,15 @@ plugins {
     id 'org.jetbrains.kotlin.android'
 }
 
-static def getCommitCount() {
-    // UNIX
-    def result = "git rev-list HEAD --count".execute().text.trim()
-    // Windows
-    if (result.empty) result = "PowerShell -Command git rev-list HEAD --count".execute().text.trim()
-    if (result.empty) throw new RuntimeException("Could not generate versioncode on this platform? Cmd output: ${result.text}")
-    return result.toInteger()
-}
-
 android {
-    compileSdk 32
-
+    compileSdk 33
     defaultConfig {
         minSdk 21
-        targetSdk 32
-
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        consumerProguardFiles "consumer-rules.pro"
-
-        buildConfigField "long", "YDK_VERSION", getCommitCount() + "L"
-
+        targetSdk 33
     }
-
     buildTypes {
         release {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
     compileOptions {
