@@ -1,0 +1,63 @@
+name: Publish Nightly
+
+on:
+  schedule:
+    - cron: '30 19 * * *'
+
+permissions:
+  id-token: write
+  contents: write
+  checks: write
+
+  jobs:
+
+  evaluate_changes:
+    name: Evaluate changes for run or skipping nightly build
+    runs-on: ubuntu-latest
+    outputs:
+      SHOULD_BUILD: ${{ steps.check.outputs.shouldBuild }}
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 1
+
+      - name: Check
+        id: check
+        run: |
+          if [[ $(git rev-list --after="24 hours" main) ]]; then
+            echo ::set-output name=shouldBuild::true
+          else
+            echo ::set-output name=shouldBuild::false
+          fi
+
+  build:
+    name: Build
+    needs: evaluate_changes
+    if: ${{ needs.evaluate_changes.outputs.SHOULD_BUILD == 'true' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Build
+        uses: gradle/gradle-build-action@v2
+        with:
+          gradle-version: current
+          arguments: build
+          
+  create_tag:
+    name: Nightly Tag
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Create TAG_NAME environment variable
+        run: |
+          echo "TAG_NAME=nightly-$(date --rfc-3339=date)" >> $GITHUB_ENV
+
+      - name: Create tag
+        uses: rickstaa/action-create-tag@v1
+        env:
+          TAG_NAME: ${{ env.TAG_NAME }}
+        with:
+          tag: ${{ env.TAG_NAME }}
