@@ -9,7 +9,7 @@ permissions:
   contents: write
   checks: write
 
-  jobs:
+jobs:
 
   evaluate_changes:
     name: Evaluate changes for run or skipping nightly build
