@@ -1,0 +1,30 @@
+name: Check Pull Request
+
+on:
+  push:
+
+permissions:
+  id-token: write
+  contents: write
+  checks: write
+  pull-requests: write
+
+jobs:
+
+  build:
+    name: Build
+    uses: ./.github/workflows/build.yml
+    secrets: inherit
+
+  auto_merge_dependabot:
+    name: Merge Dependabot pull request
+    runs-on: ubuntu-latest
+    if: github.event.pull_request.user.login == 'dependabot[bot]'
+    needs: [ gradle_test ]
+    steps:
+      - env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_URL: ${{ github.event.pull_request.html_url }}
+        run: |
+          gh pr comment $PR_URL --body "No issues found, auto-merging the Dependabot pull request."
+          gh pr merge $PR_URL --delete-branch
