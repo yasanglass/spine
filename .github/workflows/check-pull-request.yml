@@ -20,7 +20,7 @@ jobs:
     name: Merge Dependabot pull request
     runs-on: ubuntu-latest
     if: github.event.pull_request.user.login == 'dependabot[bot]'
-    needs: [ gradle_test ]
+    needs: [ build ]
     steps:
       - env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
