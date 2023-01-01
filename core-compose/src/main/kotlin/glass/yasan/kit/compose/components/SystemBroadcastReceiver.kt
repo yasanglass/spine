@@ -1,4 +1,4 @@
-package dev.yasan.kit.compose.components
+package glass.yasan.kit.compose.components
 
 import android.content.BroadcastReceiver
 import android.content.Context

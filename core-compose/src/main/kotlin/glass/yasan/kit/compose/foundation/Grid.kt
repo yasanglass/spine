@@ -1,4 +1,4 @@
-package dev.yasan.kit.compose.foundation
+package glass.yasan.kit.compose.foundation
 
 import androidx.annotation.IntRange
 import androidx.compose.runtime.Stable

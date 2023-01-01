@@ -1,4 +1,4 @@
-package dev.yasan.kit.compose.components
+package glass.yasan.kit.compose.components
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -12,8 +12,8 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
 import coil.request.ImageRequest
-import dev.yasan.kit.compose.R
-import dev.yasan.kit.compose.foundation.grid
+import glass.yasan.kit.compose.R
+import glass.yasan.kit.compose.foundation.grid
 
 /**
  * YASAN branding footer composable. Shows YASAN logo in form of a footer.

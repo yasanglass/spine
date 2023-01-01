@@ -1,4 +1,4 @@
-package dev.yasan.kit.core
+package glass.yasan.kit.core
 
 val Any.TAG: String
     get() {

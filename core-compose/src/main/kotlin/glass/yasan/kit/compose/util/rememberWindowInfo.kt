@@ -1,4 +1,4 @@
-package dev.yasan.kit.compose.util
+package glass.yasan.kit.compose.util
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalConfiguration

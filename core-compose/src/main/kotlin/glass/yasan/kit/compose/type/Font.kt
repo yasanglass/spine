@@ -1,10 +1,10 @@
-package dev.yasan.kit.compose.type
+package glass.yasan.kit.compose.type
 
 import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
-import dev.yasan.kit.compose.R
+import glass.yasan.kit.compose.R
 
 val rubikFamily = FontFamily(
     Font(R.font.rubik_black, FontWeight.Black, FontStyle.Normal),
