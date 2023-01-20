@@ -1,4 +1,4 @@
-package glass.yasan.kit.core
+package glass.yasan.spine.core
 
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Dispatchers

@@ -1,4 +1,4 @@
-package glass.yasan.kit.compose.animation
+package glass.yasan.spine.compose.animation
 
 import androidx.compose.animation.*
 import androidx.compose.runtime.Composable
