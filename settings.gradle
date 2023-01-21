@@ -23,6 +23,6 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "YDK for Android"
+rootProject.name = "Spine"
 include ':core'
 include ':core-compose'
