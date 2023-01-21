@@ -24,6 +24,8 @@ object WebHelper {
 
     /**
      * Opens the URL in a web view. It also sets the app's package name as the referrer.
+     *
+     * @return If [url] was launched successfully.
      */
     fun openWebView(context: Context, url: String): Boolean {
         try {

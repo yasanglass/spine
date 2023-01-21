@@ -7,6 +7,11 @@ import androidx.annotation.StringRes
  *
  * @param data The data you want to load/use.
  * @param messageResourceId The String resource id of the (error) message you want to show to the user.
+ *
+ * @see Resource.Initial
+ * @see Resource.Loading
+ * @see Resource.Success
+ * @see Resource.Error
  */
 sealed class Resource<T>(val data: T? = null, @StringRes val messageResourceId: Int? = null) {
     /**
