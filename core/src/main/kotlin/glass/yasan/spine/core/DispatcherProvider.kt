@@ -7,6 +7,7 @@ import kotlinx.coroutines.Dispatchers
  * An interface meant for providing Coroutines' [Dispatchers] as singletons using dependency injection.
  *
  * @see Dispatchers
+ * @see CoroutineDispatcher
  */
 interface DispatcherProvider {
     val main: CoroutineDispatcher

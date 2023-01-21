@@ -25,4 +25,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Spine"
 include ':core'
-include ':core-compose'
+include ':compose'
