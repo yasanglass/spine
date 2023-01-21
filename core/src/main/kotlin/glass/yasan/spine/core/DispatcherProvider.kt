@@ -4,7 +4,7 @@ import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Dispatchers
 
 /**
- * An interface meant for providing Coroutines' [Dispatchers] as Singletons using Hilt.
+ * An interface meant for providing Coroutines' [Dispatchers] as singletons using dependency injection.
  *
  * @see Dispatchers
  */
