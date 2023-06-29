@@ -6,7 +6,7 @@ buildscript {
         compose_bom_version = '2023.06.00'
         compose_compiler_version = '1.4.7'
         kotlin_version = '1.8.21'
-        kotlinx_coroutines_android_version = '1.7.1'
+        kotlinx_coroutines_android_version = '1.7.2'
     }
     repositories {
         google()
