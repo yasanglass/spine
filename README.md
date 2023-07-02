@@ -4,7 +4,7 @@
 [![](https://jitpack.io/v/yasanglass/spine.svg)](https://jitpack.io/#yasanglass/spine)
 [![](https://jitpack.io/v/yasanglass/spine/month.svg)](https://jitpack.io/#yasanglass/spine)
 
-Commonly used files used on my projects.
+The backbone of my projects: A series of commonly used files on my projects.
 
 ## Download
 
