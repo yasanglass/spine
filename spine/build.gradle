@@ -21,16 +21,10 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-    buildFeatures {
-        compose true
-    }
-    composeOptions {
-        kotlinCompilerExtensionVersion compose_compiler_version
-    }
-    namespace 'glass.yasan.spine.compose'
+    namespace 'glass.yasan.spine'
 }
 
 dependencies {
-    implementation platform("androidx.compose:compose-bom:$compose_bom_version")
-    implementation 'androidx.compose.ui:ui'
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$kotlinx_coroutines_android_version"
+    implementation "androidx.browser:browser:$browser_version"
 }

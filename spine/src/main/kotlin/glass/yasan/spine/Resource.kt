@@ -1,4 +1,4 @@
-package glass.yasan.spine.core
+package glass.yasan.spine
 
 import androidx.annotation.StringRes
 

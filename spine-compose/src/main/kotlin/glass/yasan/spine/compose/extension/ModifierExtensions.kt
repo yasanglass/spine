@@ -1,4 +1,4 @@
-package glass.yasan.spine.compose.util
+package glass.yasan.spine.compose.extension
 
 import androidx.compose.ui.Modifier
 

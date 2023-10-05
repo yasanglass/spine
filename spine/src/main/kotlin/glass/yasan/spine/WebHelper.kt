@@ -1,11 +1,11 @@
-package glass.yasan.spine.core
+package glass.yasan.spine
 
 import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import androidx.browser.customtabs.CustomTabsIntent
-import glass.yasan.spine.core.WebHelper.PLAY_STORE_APP_LINK_PREFIX
-import glass.yasan.spine.core.WebHelper.openWebView
+import glass.yasan.spine.WebHelper.PLAY_STORE_APP_LINK_PREFIX
+import glass.yasan.spine.WebHelper.openWebView
 import java.util.regex.Pattern
 
 /**
