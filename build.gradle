@@ -3,9 +3,9 @@ buildscript {
     ext {
         browser_version = '1.6.0'
         build_tools_version = '8.1.2'
-        compose_bom_version = '2023.09.01'
-        compose_compiler_version = '1.4.7'
-        kotlin_version = '1.8.21'
+        compose_bom_version = '2023.09.02'
+        compose_compiler_version = '1.5.3'
+        kotlin_version = '1.9.10'
         kotlinx_coroutines_android_version = '1.7.3'
     }
     repositories {
