@@ -35,4 +35,6 @@ dependencies {
 
     implementation platform("androidx.compose:compose-bom:$compose_bom_version")
     implementation 'androidx.compose.ui:ui'
+
+    implementation "io.coil-kt:coil-compose:$coil_version"
 }
