@@ -6,7 +6,7 @@ import glass.yasan.spine.Resource
 @Composable
 public fun <T> Resource<T>.Content(
     contentSuccess: @Composable (T) -> Unit,
-    contentError: @Composable (messageResourceId: Int?) -> Unit,
+    contentError: @Composable () -> Unit,
     contentLoading: @Composable () -> Unit,
 ) {
     when (this) {
@@ -15,7 +15,7 @@ public fun <T> Resource<T>.Content(
             if (resourceData != null) {
                 contentSuccess(resourceData)
             } else {
-                contentError(messageResourceId)
+                contentError()
             }
         }
 
@@ -25,7 +25,7 @@ public fun <T> Resource<T>.Content(
         }
 
         is Resource.Error -> {
-            contentError(messageResourceId)
+            contentError()
         }
     }
 }
