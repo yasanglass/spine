@@ -12,7 +12,6 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
 import coil.request.ImageRequest
-import glass.yasan.spine.compose.R
 import glass.yasan.spine.compose.foundation.grid
 
 @Composable

@@ -26,3 +26,4 @@ dependencyResolutionManagement {
 rootProject.name = "Spine"
 include ':spine'
 include ':spine-compose'
+include ':spine-compose-branding'
