@@ -17,9 +17,9 @@ import glass.yasan.spine.compose.foundation.grid
 @Composable
 fun YasanBrandingFooter(
     modifier: Modifier = Modifier,
-    spacerTop: Dp = grid(8),
-    spacerBottom: Dp = grid(8),
-    logoHeight: Dp = grid(6),
+    spacerTop: Dp = 8.grid,
+    spacerBottom: Dp = 8.grid,
+    logoHeight: Dp = 6.grid,
     crossFade: Boolean = true,
     colors: LogoColors = LogoColors.DarkLight,
 ) {
