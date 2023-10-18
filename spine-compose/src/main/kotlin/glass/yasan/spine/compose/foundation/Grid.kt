@@ -2,15 +2,34 @@ package glass.yasan.spine.compose.foundation
 
 import androidx.annotation.IntRange
 import androidx.compose.runtime.Stable
+import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 
-private val grid = 8.dp
+val gridUnit = 8.dp
 
 @Stable
-fun grid(multiplier: Float) = grid * multiplier
+inline val Int.grid: Dp get() = gridUnit * this
 
 @Stable
-fun grid(@IntRange(from = 2) multiplier: Int) = grid * multiplier
+inline val Float.grid: Dp get() = gridUnit * this
 
+@Deprecated(
+    "Migrate to the new Float.grid extension function",
+    replaceWith = ReplaceWith("multiplier.grid")
+)
 @Stable
-fun grid() = grid
+fun grid(multiplier: Float) = gridUnit * multiplier
+
+@Deprecated(
+    "Migrate to the new Int.grid extension function",
+    replaceWith = ReplaceWith("multiplier.grid")
+)
+@Stable
+fun grid(@IntRange(from = 2) multiplier: Int) = gridUnit * multiplier
+
+@Deprecated(
+    "Migrate to the new Int.grid extension function",
+    replaceWith = ReplaceWith("1.grid")
+)
+@Stable
+fun grid() = gridUnit
