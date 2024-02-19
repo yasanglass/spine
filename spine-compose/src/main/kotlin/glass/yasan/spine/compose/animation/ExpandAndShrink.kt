@@ -1,0 +1,34 @@
+package glass.yasan.spine.compose.animation
+
+import androidx.compose.animation.AnimatedVisibility
+import androidx.compose.animation.AnimatedVisibilityScope
+import androidx.compose.animation.expandVertically
+import androidx.compose.animation.fadeIn
+import androidx.compose.animation.fadeOut
+import androidx.compose.animation.shrinkVertically
+import androidx.compose.runtime.Composable
+
+@Composable
+fun ExpandAndShrink(
+    visible: Boolean,
+    content: @Composable AnimatedVisibilityScope.() -> Unit,
+) {
+    AnimatedVisibility(
+        visible = visible,
+        enter = expandVertically() + fadeIn(),
+        exit = shrinkVertically() + fadeOut(),
+        content = content,
+    )
+}
+
+@Composable
+fun <T> ExpandAndShrinkNotNull(
+    value: T?,
+    content: @Composable AnimatedVisibilityScope.(T) -> Unit,
+) {
+    ExpandAndShrink(value != null) {
+        value?.let {
+            content(it)
+        }
+    }
+}
