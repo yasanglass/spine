@@ -8,4 +8,8 @@ import androidx.compose.ui.graphics.luminance
 fun adaptiveContentColor(
     backgroundColor: Color,
 ): Color =
-    if (backgroundColor.luminance() > 0.5) Color.Black else Color.White
+    if (backgroundColor.luminance() > 0.5) {
+        Color.Black
+    } else {
+        Color.White
+    }

@@ -5,27 +5,27 @@ import glass.yasan.spine.Resource
 
 @Composable
 public fun <T> Resource<T>.Content(
-    contentSuccess: @Composable (T) -> Unit,
-    contentError: @Composable () -> Unit,
-    contentLoading: @Composable () -> Unit,
+    success: @Composable (T) -> Unit,
+    error: @Composable () -> Unit,
+    loading: @Composable () -> Unit,
 ) {
     when (this) {
         is Resource.Success -> {
             val resourceData = data
             if (resourceData != null) {
-                contentSuccess(resourceData)
+                success(resourceData)
             } else {
-                contentError()
+                error()
             }
         }
 
         is Resource.Initial,
         is Resource.Loading -> {
-            contentLoading()
+            loading()
         }
 
         is Resource.Error -> {
-            contentError()
+            error()
         }
     }
 }
