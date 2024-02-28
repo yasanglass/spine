@@ -20,15 +20,3 @@ fun ExpandAndShrink(
         content = content,
     )
 }
-
-@Composable
-fun <T> ExpandAndShrinkNotNull(
-    value: T?,
-    content: @Composable AnimatedVisibilityScope.(T) -> Unit,
-) {
-    ExpandAndShrink(value != null) {
-        value?.let {
-            content(it)
-        }
-    }
-}
