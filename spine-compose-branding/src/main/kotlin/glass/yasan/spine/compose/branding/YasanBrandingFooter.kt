@@ -21,7 +21,7 @@ fun YasanBrandingFooter(
     spacerBottom: Dp = 8.grid,
     logoHeight: Dp = 6.grid,
     crossFade: Boolean = true,
-    colors: LogoColors = LogoColors.DarkLight,
+    colors: YasanColors = YasanColors.DarkLight,
 ) {
 
     Column(
@@ -46,13 +46,13 @@ fun YasanBrandingFooter(
     }
 }
 
-enum class LogoColors {
+enum class YasanColors {
     DarkLight,
     DarkLightInverted,
 }
 
-private fun LogoColors.resolveImageData(): Int =
+private fun YasanColors.resolveImageData(): Int =
     when (this) {
-        LogoColors.DarkLight -> R.drawable.ic_yasan_logo_text2_color
-        LogoColors.DarkLightInverted -> R.drawable.ic_yasan_logo_text2_color_inverted
+        YasanColors.DarkLight -> R.drawable.ic_yasan_logo_text2_color
+        YasanColors.DarkLightInverted -> R.drawable.ic_yasan_logo_text2_color_inverted
     }
