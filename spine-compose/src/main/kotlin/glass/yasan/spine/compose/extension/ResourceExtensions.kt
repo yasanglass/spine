@@ -37,7 +37,7 @@ public fun <T> Resource<T>.Visualize(
 public fun <T> LazyListScope.visualizeResource(
     resource: Resource<T>,
     successContent: LazyListScope.(T) -> Unit,
-    errorContent: @Composable (LazyItemScope.() -> Unit),
+    errorContent: @Composable (LazyItemScope.(messageResourceId: Int?) -> Unit),
     loadingContent: @Composable (LazyItemScope.() -> Unit),
 ) {
     when (resource) {
@@ -46,7 +46,7 @@ public fun <T> LazyListScope.visualizeResource(
             if (resourceData != null) {
                 successContent(resourceData)
             } else {
-                item(key = ERROR_KEY) { errorContent() }
+                item(key = ERROR_KEY) { errorContent(resource.messageResourceId) }
             }
         }
 
@@ -56,7 +56,7 @@ public fun <T> LazyListScope.visualizeResource(
         }
 
         is Resource.Error -> {
-            item(key = ERROR_KEY) { errorContent() }
+            item(key = ERROR_KEY) { errorContent(resource.messageResourceId) }
         }
     }
 }
