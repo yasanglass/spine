@@ -28,3 +28,4 @@ rootProject.name = "Spine"
 include ':spine'
 include ':spine-compose'
 include ':spine-compose-branding'
+include ':spine-preference'
