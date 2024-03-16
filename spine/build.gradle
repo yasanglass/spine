@@ -29,4 +29,5 @@ dependencies {
     implementation "androidx.browser:browser:$browser_version"
 
     api "com.github.patrykandpatrick.opto:core:$patrykandpatrick_opto_version"
+    api "androidx.datastore:datastore-preferences:$androidx_datastore_version"
 }
