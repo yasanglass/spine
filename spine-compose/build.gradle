@@ -1,6 +1,7 @@
 plugins {
-    id 'com.android.library'
-    id 'org.jetbrains.kotlin.android'
+    alias libs.plugins.android.library
+    alias libs.plugins.jetbrains.kotlin.android
+    alias libs.plugins.jetbrains.compose.compiler
 }
 
 android {
@@ -25,7 +26,7 @@ android {
         compose true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion compose_compiler_version
+        kotlinCompilerExtensionVersion = libs.androidx.compose.compiler.get().version
     }
     namespace 'glass.yasan.spine.compose'
 }
@@ -33,8 +34,8 @@ android {
 dependencies {
     api project(path: ':spine')
 
-    implementation platform("androidx.compose:compose-bom:$compose_bom_version")
-    implementation 'androidx.compose.ui:ui'
-    implementation 'androidx.compose.animation:animation-android'
-    implementation 'androidx.compose.foundation:foundation-android'
+    implementation platform(libs.androidx.compose.bom)
+    implementation libs.androidx.compose.ui
+    implementation libs.androidx.animation.android
+    implementation libs.androidx.foundation.android
 }

@@ -1,0 +1,28 @@
+[versions]
+androidGradlePluginVersion = "8.6.0"
+androidxComposeBomVersion = "2024.08.00"
+androidxComposeCompilerVersion = "1.5.15"
+androidxCoreKtxVersion = "1.13.1"
+browserVersion = "1.8.0"
+coilComposeVersion = "2.7.0"
+jetbrainsKotlinVersion = "2.0.20"
+kotlinxCoroutinesAndroidVersion = "1.8.1"
+optoVersion = "1.1.0"
+androidxDataStoreVersion = "1.1.1"
+
+[libraries]
+androidx-animation-android = { module = "androidx.compose.animation:animation-android" }
+androidx-browser = { module = "androidx.browser:browser", version.ref = "browserVersion" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "androidxComposeBomVersion" }
+androidx-compose-compiler = { group = "androidx.compose.compiler", name = "compiler", version.ref = "androidxComposeCompilerVersion" }
+androidx-compose-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-datastore-preferences = { group = "androidx.datastore", name = "datastore-preferences", version.ref = "androidxDataStoreVersion" }
+androidx-foundation-android = { module = "androidx.compose.foundation:foundation-android" }
+coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coilComposeVersion" }
+kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinxCoroutinesAndroidVersion" }
+patrykandpatrick-opto-core = { group = "com.github.patrykandpatrick.opto", name = "core", version.ref = "optoVersion" }
+
+[plugins]
+android-library = { id = "com.android.library", version.ref = "androidGradlePluginVersion" }
+jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "jetbrainsKotlinVersion" }
+jetbrains-compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "jetbrainsKotlinVersion" }
