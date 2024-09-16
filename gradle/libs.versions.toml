@@ -6,7 +6,7 @@ androidxCoreKtxVersion = "1.13.1"
 browserVersion = "1.8.0"
 coilComposeVersion = "2.7.0"
 jetbrainsKotlinVersion = "2.0.20"
-kotlinxCoroutinesAndroidVersion = "1.8.1"
+kotlinxCoroutinesAndroidVersion = "1.9.0"
 optoVersion = "1.1.0"
 androidxDataStoreVersion = "1.1.1"
 
