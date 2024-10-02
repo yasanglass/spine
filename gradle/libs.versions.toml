@@ -1,5 +1,5 @@
 [versions]
-androidGradlePluginVersion = "8.6.1"
+androidGradlePluginVersion = "8.7.0"
 androidxComposeBomVersion = "2024.09.02"
 androidxComposeCompilerVersion = "1.5.15"
 androidxCoreKtxVersion = "1.13.1"
