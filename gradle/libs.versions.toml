@@ -1,6 +1,6 @@
 [versions]
 androidGradlePluginVersion = "8.7.0"
-androidxComposeBomVersion = "2024.09.02"
+androidxComposeBomVersion = "2024.09.03"
 androidxComposeCompilerVersion = "1.5.15"
 androidxCoreKtxVersion = "1.13.1"
 browserVersion = "1.8.0"
