@@ -24,6 +24,10 @@ android {
     namespace 'glass.yasan.spine'
 }
 
+kotlin {
+    explicitApi()
+}
+
 dependencies {
     implementation libs.kotlinx.coroutines.android
     implementation libs.androidx.browser

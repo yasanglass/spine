@@ -31,6 +31,10 @@ android {
     namespace 'glass.yasan.spine.compose.branding'
 }
 
+kotlin {
+    explicitApi()
+}
+
 dependencies {
     api project(path: ':spine')
     api project(path: ':spine-compose')

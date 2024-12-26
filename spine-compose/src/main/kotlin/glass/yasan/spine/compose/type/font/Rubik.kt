@@ -6,7 +6,7 @@ import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import glass.yasan.spine.compose.R
 
-val rubikFamily = FontFamily(
+public val rubikFamily: FontFamily = FontFamily(
     Font(R.font.rubik_black, FontWeight.Black, FontStyle.Normal),
     Font(R.font.rubik_blackitalic, FontWeight.Black, FontStyle.Italic),
 
@@ -23,6 +23,6 @@ val rubikFamily = FontFamily(
     Font(R.font.rubik_italic, FontWeight.Normal, FontStyle.Italic),
 )
 
-val rubikMonoFamily = FontFamily(
+public val rubikMonoFamily: FontFamily = FontFamily(
     Font(R.font.rubik_mono)
 )

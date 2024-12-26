@@ -9,9 +9,9 @@ import kotlinx.coroutines.Dispatchers
  * @see Dispatchers
  * @see CoroutineDispatcher
  */
-interface DispatcherProvider {
-    val main: CoroutineDispatcher
-    val io: CoroutineDispatcher
-    val default: CoroutineDispatcher
-    val unconfined: CoroutineDispatcher
+public interface DispatcherProvider {
+    public val main: CoroutineDispatcher
+    public val io: CoroutineDispatcher
+    public val default: CoroutineDispatcher
+    public val unconfined: CoroutineDispatcher
 }

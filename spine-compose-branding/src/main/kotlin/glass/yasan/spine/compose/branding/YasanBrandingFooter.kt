@@ -15,7 +15,7 @@ import coil.request.ImageRequest
 import glass.yasan.spine.compose.foundation.grid
 
 @Composable
-fun YasanBrandingFooter(
+public fun YasanBrandingFooter(
     modifier: Modifier = Modifier,
     spacerTop: Dp = 8.grid,
     spacerBottom: Dp = 8.grid,
@@ -46,7 +46,7 @@ fun YasanBrandingFooter(
     }
 }
 
-enum class YasanColors {
+public enum class YasanColors {
     DarkLight,
     DarkLightInverted,
 }

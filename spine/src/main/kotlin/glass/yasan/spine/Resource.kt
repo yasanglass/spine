@@ -13,24 +13,27 @@ import androidx.annotation.StringRes
  * @see Resource.Success
  * @see Resource.Error
  */
-sealed class Resource<T>(val data: T? = null, @StringRes val messageResourceId: Int? = null) {
+public sealed class Resource<T>(
+    public val data: T? = null,
+    @StringRes public val messageResourceId: Int? = null
+) {
     /**
      * Indicates data load success. You can use the [data] variable as it should never be null in this state.
      */
-    class Success<T>(data: T) : Resource<T>(data, null)
+    public class Success<T>(data: T) : Resource<T>(data, null)
 
     /**
      * Indicates data load failure. You should provide a [messageResourceId] for the user to see.
      */
-    class Error<T>(messageResourceId: Int?) : Resource<T>(null, messageResourceId)
+    public class Error<T>(messageResourceId: Int?) : Resource<T>(null, messageResourceId)
 
     /**
      * Indicates that the data is being loaded.
      */
-    class Loading<T> : Resource<T>()
+    public class Loading<T> : Resource<T>()
 
     /**
      * Should be used as the default value of [Resource] variables. Can be used for initiating data load.
      */
-    class Initial<T> : Resource<T>()
+    public class Initial<T> : Resource<T>()
 }

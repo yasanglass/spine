@@ -7,7 +7,7 @@ import glass.yasan.spine.compose.branding.YasanBrandingFooter
 import glass.yasan.spine.compose.branding.YasanColors
 import glass.yasan.spine.compose.foundation.grid
 
-fun LazyListScope.yasanBrandingFooter(
+public fun LazyListScope.yasanBrandingFooter(
     modifier: Modifier = Modifier,
     spacerTop: Dp = 8.grid,
     spacerBottom: Dp = 8.grid,
