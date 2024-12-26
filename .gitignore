@@ -76,3 +76,5 @@ lint/tmp/
 # lint/reports/
 
 app/publisher-key.json
+
+.DS_Store
