@@ -1,4 +1,4 @@
-package glass.yasan.spine.compose.type
+package glass.yasan.spine.compose.type.font
 
 import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
