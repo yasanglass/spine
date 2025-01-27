@@ -3,7 +3,7 @@ androidGradlePluginVersion = "8.8.0"
 androidxComposeBomVersion = "2025.01.00"
 androidxComposeCompilerVersion = "1.5.15"
 coilComposeVersion = "2.7.0"
-jetbrainsKotlinVersion = "2.1.0"
+jetbrainsKotlinVersion = "2.1.10"
 kotlinxCoroutinesAndroidVersion = "1.10.1"
 annotationJvmVersion = "1.9.1"
 
