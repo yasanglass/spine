@@ -1,6 +1,6 @@
 [versions]
 androidGradlePluginVersion = "8.8.0"
-androidxComposeBomVersion = "2025.01.01"
+androidxComposeBomVersion = "2025.02.00"
 androidxComposeCompilerVersion = "1.5.15"
 coilComposeVersion = "2.7.0"
 jetbrainsKotlinVersion = "2.1.10"
